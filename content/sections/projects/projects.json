@@ -3,7 +3,7 @@
     {
       "visible": true,
       "title": "🏬 UniShop",
-      "description": "A fullstack e-commerce site in which users can shop for items and checkout with payment information. \n Users can register for an account and login to see their history of orders",
+      "description": "A fullstack e-commerce site in which users can shop for items and checkout with a valid credit card. \n Users can register for an account and login to see their history of orders",
       "tags": ["React", "Express", "Node", "PostgreSQL", "Zustand", "Tailwind CSS", "Stripe API", "Render"],
       "image": {
         "src": "../../images/UniShop1.png",

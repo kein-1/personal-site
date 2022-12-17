@@ -1,7 +1,7 @@
 {
   "intro": "Hey 👋",
   "heroPhoto": {
-    "src": "../../images/lego-dummy.png",
+    "src": "../../images/heropic.png",
     "alt": "My Photo"
   },
   "title": "I'm Kein",
@@ -10,7 +10,7 @@
     "highlight": "",
     "suffix": ""
   },
-  "description": "I am currently a Masters Student studying Computer and Information Technology @UPenn",
+  "description": "I am currently a Masters Student studying Computer and Information Technology @ UPenn",
   "socialProfiles": {
     "from": ["LinkedIn", "Medium", "GitHub", "Mail"],
     "showIcons": false
