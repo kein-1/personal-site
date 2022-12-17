@@ -1,58 +1,9 @@
 {
   "interests": [
     {
-      "label": "Quick and Easy Setup",
+      "label": "Cat",
       "image": {
-        "src": "../../images/joystick.png",
-        "alt": ""
-      }
-    },
-    {
-      "label": "Content via Markdown",
-      "image": {
-        "src": "../../images/notebook.png",
-        "alt": ""
-      }
-    },
-    {
-      "label": "Responsive Design",
-      "image": {
-        "src": "../../images/nail-polish.png",
-        "alt": ""
-      }
-    },
-    {
-      "label": "Medium Integration",
-      "image": {
-        "src": "../../images/medium.png",
-        "alt": ""
-      }
-    },
-    {
-      "label": "Animations",
-      "image": {
-        "src": "../../images/gem-stone.png",
-        "alt": ""
-      }
-    },
-    {
-      "label": "PWA (Offline Support)",
-      "image": {
-        "src": "../../images/mobile-phone.png",
-        "alt": ""
-      }
-    },
-    {
-      "label": "Modern Tech-Stack",
-      "image": {
-        "src": "../../images/gatsby.png",
-        "alt": ""
-      }
-    },
-    {
-      "label": "Blazing Fast",
-      "image": {
-        "src": "../../images/high-voltage.png",
+        "src": "https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1567008394/noticon/ohybolu4ensol1gzqas1.png",
         "alt": ""
       }
     }

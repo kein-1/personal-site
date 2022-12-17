@@ -1,25 +1,29 @@
 {
-  "name": "gatsby-starter-portfolio-minimal-theme",
+  "name": "personal-site",
   "version": "1.0.0",
-  "description": "A Gatsby Starter Project to easily get started with the Portfolio Minimal Theme.",
-  "scripts": {
-    "clean": "gatsby clean",
-    "develop": "gatsby develop",
-    "build": "gatsby build",
-    "serve": "gatsby serve",
-    "gitAdd": "git add . && git commit -m 'updated files' && git push"
-  },
+  "private": true,
+  "description": "personal-site",
+  "author": "Kevin J.H Li",
   "engines": {
     "node": ">=18.0.0"
   },
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "gitAdd": "git add . && git commit -m 'updated files' && git push"
+  },
   "dependencies": {
-    "gatsby": "^5.0.1",
+    "autoprefixer": "^10.4.13",
+    "gatsby": "^5.3.2",
+    "gatsby-plugin-postcss": "^6.3.0",
     "gatsby-theme-portfolio-minimal": "latest",
+    "postcss": "^8.4.20",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "postcss": "^8.4.20",
-    "tailwindcss": "^3.2.4",
-    "autoprefixer": "^10.4.13"
+    "tailwindcss": "^3.2.4"
   },
   "devDependencies": {
     "eslint": "^8.29.0",
@@ -28,8 +32,6 @@
     "eslint-plugin-import": "^2.26.0",
     "prettier": "^2.8.1"
   },
-  "author": "Konstantin Münster <mail@konstantin.digital>",
-  "license": "0BSD",
   "starter-name": "gatsby-starter-portfolio-minimal-theme",
   "homepage": "https://github.com/konstantinmuenster/gatsby-starter-portfolio-minimal-theme#readme",
   "repository": {
