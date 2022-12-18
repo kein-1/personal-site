@@ -3,8 +3,7 @@ imageSrc: "../../images/charles-deluvio-DgoyKNgPiFQ-unsplash.jpg"
 imageAlt: "About Gatsby Theme Portfolio Minimal"
 ---
 
-<!-- Portfolio Minimal is a Gatsby Theme that creates outstanding one-pages portfolio within minutes!
-
+<!-- 
 
 Using theme composition, you can easily customize the CSS theme to your own preferences - e.g. change colors, fonts, etc.
 
