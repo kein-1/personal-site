@@ -10,7 +10,7 @@ Using theme composition, you can easily customize the CSS theme to your own pref
 Last but not least, it has some cool features you can opt-in to: Dark Mode, Splash Screen, Cookie Banner, and more to find out :) -->
 #### 👦 Background
 
-Through university, I am gaining a background in computer science  and Java. Outside of my coursework, I am teaching myself fullstack development. 
+Through university, I am gaining a background in Java. Outside of my coursework, I am teaching myself fullstack development primarily within the JavaScript ecosystem. 
 <!-- 
 I work with: 
 [![My Skills](https://skillicons.dev/icons?i=py,js,java,react,nodejs,mongodb,express,postgres,tailwind,jest,git&perline=8)](https://skillicons.dev) -->
