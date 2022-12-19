@@ -25,6 +25,7 @@ I work with:
 #### 🆘 Future Plans
 
 🔲 Learn TypeScript, GraphQL, and Redis and build a project with them\
-🔲 Complete Full Stack Open. I paused it at week 7 to spend time building out my e-commerce personal project. When I resume, it will be with week 8: GraphQL. The course is terrific and there is a lot to learn here. Future topics I will cover will be GraphQL, TypeScript, CI/CD etc 
+🔲 Complete Full Stack Open. I paused it at week 7 to spend time building out my e-commerce personal project. When I resume, it will be with week 8: GraphQL. The course is terrific and there is a lot to learn here. Future topics I will cover will be GraphQL, TypeScript, CI/CD etc\
+🔲 Begin contributing to Open Source
 
 

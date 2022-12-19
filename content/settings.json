@@ -21,7 +21,7 @@
       "header": [
         { "label": "About", "url": "/#about" },
         { "label": "Projects", "url": "/#projects" },
-        { "label": "Github", "url": "/#github" }
+        { "label": "Open Source", "url": "/#features" }
       ],
       "ctaButton": {
         "openNewTab": true,

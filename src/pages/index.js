@@ -19,10 +19,15 @@ export default function IndexPage() {
         <HeroSection sectionId="hero" />
         {/* <ArticlesSection sectionId="articles" heading="Latest Articles" sources={['Medium']} /> */}
         <AboutSection sectionId="about" heading="About Me" />
-        <LegalSection sectionId="imprint" heading="Techologies Used" />
+        <LegalSection sectionId="imprint" heading="Techologies I Use" />
         <ProjectsSection sectionId="projects" heading="Personal Projects" />
         {/* <InterestsSection sectionId="details" heading="Technology Stack" /> */}
         {/* <ContactSection sectionId="github" heading="Issues?" /> */}
+        <Animation type="fadeUp">
+          <Section heading="Open Source">
+            <p>TBD!</p>
+          </Section>
+        </Animation>
       </Page>
     </>
   )
