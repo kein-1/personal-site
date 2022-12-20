@@ -19,12 +19,20 @@ export default function IndexPage() {
         <HeroSection sectionId="hero" />
         {/* <ArticlesSection sectionId="articles" heading="Latest Articles" sources={['Medium']} /> */}
         <AboutSection sectionId="about" heading="About Me" />
-        <LegalSection sectionId="imprint" heading="Techologies I Use" />
-        <ProjectsSection sectionId="projects" heading="Personal Projects" />
-        {/* <InterestsSection sectionId="details" heading="Technology Stack" /> */}
-        {/* <ContactSection sectionId="github" heading="Issues?" /> */}
         <Animation type="fadeUp">
-          <Section heading="Open Source">
+          <Section heading="Technologies I Use">
+            <img
+              src="https://skillicons.dev/icons?i=py,js,java,react,nodejs,mongodb,express,postgres,tailwind,jest,git&perline=12"
+              width="800"
+            ></img>
+          </Section>
+        </Animation>
+        <ProjectsSection sectionId="projects" heading="Personal Projects" />
+        {/* <InterestsSection sectionId="details" heading="Interests" />
+        <ContactSection sectionId="github" heading="Issues?" /> */}
+
+        <Animation type="fadeUp">
+          <Section id="open" heading="Open Source">
             <p>TBD!</p>
           </Section>
         </Animation>
