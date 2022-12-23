@@ -32,7 +32,7 @@ export default function IndexPage() {
         <ContactSection sectionId="github" heading="Issues?" /> */}
 
         <Animation type="fadeUp">
-          <Section anchor = "anchor" heading="Open Source">
+          <Section anchor = "opensource" heading="Open Source">
             <p>TBD!</p>
           </Section>
         </Animation>
