@@ -19,7 +19,7 @@ I work with:
 
 #### 📌 Currently Working On
 
-🔲 Graduate coursework in Discrete Mathematics and Data Structures & Software Design in Java
+🔲 Graduate coursework in Discrete Mathematics and Data Structures & Software Design in Java  
 🔲 Interning at Arlite Technologies where I am building out a full stack employee portal
 
 #### 🆘 Future Plans
