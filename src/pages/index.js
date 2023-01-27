@@ -12,6 +12,9 @@ import {
   Section,
 } from 'gatsby-theme-portfolio-minimal'
 
+// NOTE: ALWAYS ADD AN ANCHOR TAG TO GET THE NAV BAR TO GO DOWN TO THE SECTION. THE SECTION
+// IN SETTINGS.JSON MUST ALSO BE UPDATED
+
 export default function IndexPage() {
   return (
     <>
@@ -19,11 +22,12 @@ export default function IndexPage() {
         <HeroSection sectionId="hero" />
         {/* <ArticlesSection sectionId="articles" heading="Latest Articles" sources={['Medium']} /> */}
         <AboutSection sectionId="about" heading="About Me" />
-        <Animation type="fadeUp">
+
+        {/* <Animation type="fadeUp">
           <Section anchor="experience" heading="Experience">
             <p>Will update this section! Currently a Software Engineering Intern @ Arlite Technologies</p>
           </Section>
-        </Animation>
+        </Animation> */}
 
         <Animation type="fadeUp">
           <Section heading="Technologies I Use">

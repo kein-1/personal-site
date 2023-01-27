@@ -21,7 +21,6 @@
       "header": [
         { "label": "About", "url": "/#about" },
         { "label": "Projects", "url": "/#projects" },
-        { "label": "Experience", "url": "/#experience" },
         { "label": "Open Source", "url": "/#opensource" }
       ],
       "ctaButton": {
