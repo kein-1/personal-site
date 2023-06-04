@@ -32,7 +32,7 @@ export default function IndexPage() {
         <Animation type="fadeUp">
           <Section heading="Technologies I Use">
             <img
-              src="https://skillicons.dev/icons?i=py,js,java,react,nodejs,mongodb,express,postgres,tailwind,jest,git&perline=12"
+              src="https://skillicons.dev/icons?i=java,js,react,nodejs,mongodb,express,postgres,tailwind,git&perline=12"
               width="800"
             ></img>
           </Section>
