@@ -3,7 +3,10 @@ baseURL: "//chanin.tech/"
 title: Kein Li
 paginate: 5
 # theme: PaperMod
-theme : ["hugo-embed-pdf-shortcode", "PaperMod"]
+theme:
+  - hugo-embed-pdf-shortcode
+  - PaperMod  # Replace "PaperMod" with your current theme name
+
 enableInlineShortcodes: true
 
 enableRobotsTXT: true
@@ -29,10 +32,15 @@ params:
   defaultTheme: auto # dark, light
   disableThemeToggle: false
 
+  params:
+    customCSS:
+      - css/custom.css
+
+
   ShowReadingTime: true
   ShowShareButtons: true
   ShowPostNavLinks: true
-  ShowBreadCrumbs: true
+  ShowBreadCrumbs: false
   ShowCodeCopyButtons: false
   disableSpecial1stPost: false
   disableScrollToTop: false
@@ -61,6 +69,11 @@ params:
         url: projects
       - name: resume
         url: resume
+
+  markup:
+    goldmark:
+      renderer:
+        unsafe: true
 
   # home-info mode
   homeInfoParams:
