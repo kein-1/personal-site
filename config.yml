@@ -1,5 +1,5 @@
 languageCode: en-us
-baseURL: "http://localhost/"
+baseURL: ""
 title: Kein Li
 paperSize: 5
 # theme: PaperMod
