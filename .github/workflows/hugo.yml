@@ -61,12 +61,12 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./public
+      - name: Print Base URL
+        run: echo "Base URL is: ${{ steps.pages.outputs.base_url }}"
+
 
   # Deployment job
   deploy:
-
-    relativeURLs: true
-    canonifyURLs: true
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
