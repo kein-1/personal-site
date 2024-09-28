@@ -7,18 +7,11 @@ theme:
   - hugo-embed-pdf-shortcode
   - PaperMod  # Replace "PaperMod" with your current theme name
 
-enableInlineShortcodes: true
 
 enableRobotsTXT: true
 buildDrafts: false
 buildFuture: false
 buildExpired: false
-
-relativeURLs: true
-canonifyURLs: true
-
-
-#googleAnalytics: UA-123-45
 
 minify:
   disableXML: true
