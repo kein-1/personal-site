@@ -61,8 +61,6 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./public
-      - name: Print Base URL
-          run: echo "Base URL is: ${{ steps.pages.outputs.base_url }}"
 
 
   # Deployment job
