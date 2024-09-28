@@ -56,7 +56,7 @@ jobs:
         run: |
           hugo \
             --gc \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"          
+            --baseURL "https://kein-1.github.io/personal-site/"          
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
