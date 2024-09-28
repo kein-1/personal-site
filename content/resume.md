@@ -1,6 +1,6 @@
 ---
 date: 2023-09-24
-hidemeta : true #hides
+hidemeta : true #hides#
 summary: "Professional resume of Kein Li"
 ---
 

@@ -1,0 +1,90 @@
+
+
+.project-header-wrapper {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+}
+
+.project-header-wrapper img {
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+
+.inline-figure {
+    display: inline-block;
+    margin: 10px; 
+    vertical-align: top; 
+}
+
+.inline-figure img {
+    display: block; 
+    width: 12.5rem;
+}
+
+
+.inline-figure-wide {
+    display: inline-block;
+    margin: 10px; 
+    vertical-align: top; 
+}
+
+.inline-figure-wide img {
+    display: block; 
+}
+
+
+
+
+
+.icons-wrapper {
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 10px; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+
+
+.text-wrapper {
+    text-align: center;
+}
+
+.custom-hover {
+    position: relative;
+}
+
+a.custom-hover .text-wrapper {
+    color: #000000;
+    transition: color 0.3s ease;
+}
+
+
+/* Style the popup */
+.popup {
+    position: absolute;
+    bottom:100%;
+    left: 50%; 
+    background-color: rgba(0, 0, 0, 0.8); 
+    color: #fff; 
+    padding: 8px 8px;
+    border-radius: 10px; 
+    white-space: nowrap;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    z-index: 1000; 
+    transition: opacity 0.3s ease, visibility 0.3s ease; 
+    opacity: 0; 
+    visibility: hidden; 
+    font-size: 0.9rem;
+}
+
+.custom-hover:hover .popup {
+    display: block; /* Display the popup */
+    opacity: 1; /* Fully opaque */
+    visibility: visible; /* Visible */
+}
+
