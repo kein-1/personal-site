@@ -14,6 +14,10 @@ buildDrafts: false
 buildFuture: false
 buildExpired: false
 
+relativeURLs: true
+canonifyURLs: true
+
+
 #googleAnalytics: UA-123-45
 
 minify:
