@@ -1,5 +1,5 @@
 languageCode: en-us
-baseURL: ""
+baseURL: "https://main--keinli.netlify.app/"
 title: Kein Li
 paperSize: 5
 # theme: PaperMod
@@ -12,6 +12,7 @@ enableRobotsTXT: true
 buildDrafts: false
 buildFuture: false
 buildExpired: false
+relativeURL: true
 
 
 minify:
