@@ -10,92 +10,31 @@
     <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
+      <link>//localhost:1313/about/</link>
+      <pubDate>Sun, 24 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/about/</guid>
+      <description>&lt;p&gt;About&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
       <link>//localhost:1313/projects/</link>
       <pubDate>Sun, 24 Sep 2023 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/projects/</guid>
       <description>&lt;!-- raw HTML omitted --&gt;
-&lt;h3 id=&#34;breezy&#34;&gt;Breezy&lt;/h3&gt;
-&lt;figure class=&#34;rounded-image-container&#34;&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;a href=&#34;https://github.com/kein-1/Breezy&#34; class=&#34;custom-hover&#34;&gt;
+    &lt;h3 class=&#34;text-wrapper&#34;&gt;
+        Breezy
+    &lt;/h3&gt;
+
+    &lt;div class=&#34;popup&#34;&gt;
+        Github Link
+    &lt;/div&gt;
+&lt;/a&gt;
+&lt;figure class=&#34;project-header-wrapper&#34;&gt;
     &lt;img loading=&#34;lazy&#34; src=&#34;//localhost:1313/images/breezy.webp&#34;
-         alt=&#34;Breezy is an air quality iOS app for real-time pollution data across the globe&#34; width=&#34;100&#34;/&gt; &lt;figcaption&gt;
-            &lt;p&gt;Breezy is an air quality iOS app for real-time pollution data across the globe&lt;/p&gt;
-        &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;div class=&#34;icons-wrapper&#34;&gt;
-    
-    &lt;figure&gt;
-        &lt;img loading=&#34;lazy&#34; src=&#34;//localhost:1313/icons/ios.svg&#34; width=&#34;55&#34;/&gt; 
-    &lt;/figure&gt;
-
-
-    &lt;figure&gt;
-        &lt;img loading=&#34;lazy&#34; src=&#34;//localhost:1313/icons/swift.png&#34; width=&#34;55&#34;/&gt; 
-    &lt;/figure&gt;
-
-
-    &lt;figure&gt;
-        &lt;img loading=&#34;lazy&#34; src=&#34;//localhost:1313/icons/swiftui.png&#34; width=&#34;55&#34;/&gt; 
-    &lt;/figure&gt;
-
-
-    &lt;figure&gt;
-        &lt;img loading=&#34;lazy&#34; src=&#34;//localhost:1313/icons/xcode.png&#34; width=&#34;55&#34;/&gt; 
-    &lt;/figure&gt;
-
-
-    &lt;figure&gt;
-        &lt;img loading=&#34;lazy&#34; src=&#34;//localhost:1313/icons/healthkit.png&#34; width=&#34;55&#34;/&gt; 
-    &lt;/figure&gt;
-
-
-    &lt;figure&gt;
-        &lt;img loading=&#34;lazy&#34; src=&#34;//localhost:1313/icons/mapkit.png&#34; width=&#34;55&#34;/&gt; 
-    &lt;/figure&gt;
-
-
-
-&lt;/div&gt;
-&lt;p&gt;&lt;figure class=&#34;inline-figure&#34;&gt;
-    &lt;img loading=&#34;lazy&#34; src=&#34;//localhost:1313/gifs/Screen1.gif&#34;/&gt; 
-&lt;/figure&gt;
-
-&lt;figure class=&#34;inline-figure&#34;&gt;
-    &lt;img loading=&#34;lazy&#34; src=&#34;//localhost:1313/gifs/Screen2.gif&#34;/&gt; 
-&lt;/figure&gt;
-
-&lt;figure class=&#34;inline-figure&#34;&gt;
-    &lt;img loading=&#34;lazy&#34; src=&#34;//localhost:1313/gifs/Screen3.gif&#34;/&gt; 
-&lt;/figure&gt;
-&lt;/p&gt;
-&lt;h4 id=&#34;breezy-1&#34;&gt;Breezy&lt;/h4&gt;
-&lt;figure class=&#34;rounded-image&#34;&gt;
-    &lt;img loading=&#34;lazy&#34; src=&#34;//localhost:1313/images/breezy.webp&#34;
-         alt=&#34;Breezy is an air quality iOS app for real-time pollution data across the globe&#34; width=&#34;100&#34;/&gt; &lt;figcaption&gt;
-            &lt;p&gt;Breezy is an air quality iOS app for real-time pollution data across the globe&lt;/p&gt;
-        &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;&lt;figure class=&#34;inline-tech-icon&#34;&gt;
-    &lt;img loading=&#34;lazy&#34; src=&#34;https://user-images.githubusercontent.com/25181517/121406389-6267a300-c95e-11eb-8d67-f1e22afe8aea.png&#34; width=&#34;55&#34;/&gt; 
-&lt;/figure&gt;
-
-&lt;figure class=&#34;inline-tech-icon&#34;&gt;
-    &lt;img loading=&#34;lazy&#34; src=&#34;https://user-images.githubusercontent.com/25181517/121406611-a8246b80-c95e-11eb-9b11-b771486377f6.png&#34; width=&#34;55&#34;/&gt; 
-&lt;/figure&gt;
-&lt;/p&gt;
-&lt;p&gt;&lt;figure class=&#34;inline-figure&#34;&gt;
-    &lt;img loading=&#34;lazy&#34; src=&#34;//localhost:1313/gifs/Screen1.gif&#34;/&gt; 
-&lt;/figure&gt;
-
-&lt;figure class=&#34;inline-figure&#34;&gt;
-    &lt;img loading=&#34;lazy&#34; src=&#34;//localhost:1313/gifs/Screen2.gif&#34;/&gt; 
-&lt;/figure&gt;
-
-&lt;figure class=&#34;inline-figure&#34;&gt;
-    &lt;img loading=&#34;lazy&#34; src=&#34;//localhost:1313/gifs/Screen3.gif&#34;/&gt; 
-&lt;/figure&gt;
-&lt;/p&gt;</description>
+         alt=&#34;Breezy is an iOS air quality app for real-time pollution data across the globe. View weekly, monthly, or yearly air pollution data at your current location or any location you desire&#34; width=&#34;100&#34;/&gt; &lt;figcaption&gt;
+            &lt;p&gt;Breezy is an iOS air quality app for real-time pollution data across the globe. View weekly, monthly, or yearly air pollution data at your current location or any location you desire&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>

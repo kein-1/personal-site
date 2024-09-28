@@ -59,8 +59,8 @@ params:
   # profile-mode
   profileMode:
     enabled: true # needs to be explicitly set
-    title: "Hi, \U0001F44B I'm Kein"
-    subtitle: "Currently a Software Engineer Intern @ Syska Hennesey"
+    title: "Hi, I'm Kein \U0001F680"
+    subtitle: "Software Engineer Intern @ Syska Hennesey. Interested in iOS, Backend, and Databases"
     imageUrl: "images/profile.webp"
     imageWidth: 250
     imageHeight: 250
@@ -121,10 +121,10 @@ params:
     keys: ["title", "permalink", "summary", "content"]
 menu:
   main:
-    # - identifier: about
-    #   name: About
-    #   url: /about/
-    #   weight: 1
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 1
     - identifier: projects
       name: Projects
       url: /projects/
@@ -133,10 +133,10 @@ menu:
       name: Resume
       url: /resume
       weight: 3
-    - identifier: blog
-      name: Blogs
-      url: /blogs/
-      weight: 4
+    # - identifier: blog
+    #   name: Blogs
+    #   url: /blogs/
+    #   weight: 4
     
     #- identifier: tags
     #  name: tags
