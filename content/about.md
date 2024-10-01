@@ -1,7 +1,7 @@
 ---
 # title: "Projects"
 date: 2023-09-24
-draft: false
+draft: true
 hidemeta : true
 ---
 About
