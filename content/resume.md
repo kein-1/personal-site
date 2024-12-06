@@ -4,4 +4,4 @@ hidemeta : true #hides
 summary: "Professional resume of Kein Li"
 ---
 
-{{< embed-pdf url="/files/KevinJHLI_Resume.pdf" hidePaginator="true">}}
+{{< embed-pdf url="/files/resume.pdf" hidePaginator="true">}}
