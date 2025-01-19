@@ -59,18 +59,18 @@ params:
     iconHeight: 35
 
   # profile-mode
-  profileMode:
-    enabled: true # needs to be explicitly set
-    title: "Hi, I'm Kein \U0001F680"
-    subtitle: "Software Engineer Intern @ Syska Hennesey. Interested in iOS, Backend, and Databases"
-    imageUrl: "images/profile.webp"
-    imageWidth: 250
-    imageHeight: 250
-    buttons:
-      - name: projects
-        url: projects
-      - name: resume
-        url: resume
+  # profileMode:
+  #   enabled: true # needs to be explicitly set
+  #   title: "Hi, I'm Kein \U0001F680"
+  #   subtitle: "Software Engineer Intern @ Syska Hennesey. Interested in iOS, Backend, and Databases"
+  #   imageUrl: "images/profile.webp"
+  #   imageWidth: 250
+  #   imageHeight: 250
+  #   buttons:
+  #     - name: projects
+  #       url: projects
+  #     - name: resume
+  #       url: resume
 
   markup:
     goldmark:
@@ -80,11 +80,10 @@ params:
   # home-info mode
   homeInfoParams:
     # enabled: true
-    Title: "Welcome! \U0001F44B"
-    Content: "Kein li"
+    Title: "Hi, I'm Kein \U0001F680"
+    Content: "Software Engineer Intern @ Syska Hennesey. Interested in iOS, Backend, and Databases"
 
   socialIcons:
-    
     - name: linkedin
       url: "https://www.linkedin.com/in/keinli/"
     - name: github
@@ -135,12 +134,11 @@ menu:
       name: Resume
       url: /resume
       weight: 3
-    # - identifier: blog
-    #   name: Blogs
-    #   url: /blogs/
+    - identifier: posts
+      name: Posts
+      url: /posts/
     #   weight: 4
-    
-    #- identifier: tags
+    # - identifier: tags
     #  name: tags
     #  url: /tags/
     #  weight: 4
