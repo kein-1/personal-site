@@ -4,7 +4,6 @@ title: Kein Li
 paperSize: 5
 # theme: PaperMod
 theme:
-  - hugo-embed-pdf-shortcode
   - PaperMod  # Replace "PaperMod" with your current theme name
 
 
@@ -53,6 +52,15 @@ params:
   tocopen: false
   ShowShareButtons: false
 
+  assets:
+    # disableHLJS: true # to disable highlight.js
+    # disableFingerprinting: true
+    favicon: "/favicons/favicon.ico"
+    favicon16x16: "/favicons/favicon-16x16.png"
+    favicon32x32: "/favicons/favicon-32x32.png"
+    apple_touch_icon: "/favicons/apple-touch-icon.png"
+    safari_pinned_tab: "<link / abs url>"
+
   label:
     text: "Kein Li"
     icon: "images/coding.png"
@@ -81,13 +89,16 @@ params:
   homeInfoParams:
     # enabled: true
     Title: "Hi, I'm Kein \U0001F680"
-    Content: "Software Engineer Intern @ Syska Hennesey. Interested in iOS, Backend, and Databases"
-
+    Content: |
+      - Software Engineer Intern @ Syska Hennesey. Interested in Native iOS and Backend Development  
+      - Currently
   socialIcons:
     - name: linkedin
       url: "https://www.linkedin.com/in/keinli/"
     - name: github
       url: "https://github.com/kein-1"
+    - name: cv
+      url: "https://drive.google.com/file/d/1Z-bJVETagMPQDIQK5O_Tv2MCEcKaAj6e/view?usp=sharing"
 
   analytics:
     google:
@@ -130,13 +141,10 @@ menu:
       name: Projects
       url: /projects/
       weight: 2
-    - identifier: resume
-      name: Resume
-      url: /resume
-      weight: 3
     - identifier: posts
       name: Posts
       url: /posts/
+      weight: 3
     #   weight: 4
     # - identifier: tags
     #  name: tags
@@ -149,10 +157,7 @@ menu:
     #  weight: 30
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 # pygmentsUseClasses: true
-# markup:
-#     highlight:
-#         # anchorLineNos: true
-#         codeFences: true
-#         guessSyntax: true
-#         lineNos: true
-#         style: monokai
+markup:
+    goldmark:
+        renderer:
+            unsafe: true
