@@ -2,7 +2,8 @@
 title = "Building out a mini iOS Manga App"
 date = 2026-02-22
 draft = false
-weight = 1
+weight = 0
+author = "Kein Li"
 +++
 
 ### Building Out a Mini iOS Manga App

@@ -23,6 +23,8 @@ theme = "paper"
   
   rss = true                                # show rss icon
 
+  author = "Kein Li"
+
   # home page profile
   avatar = 'https://github.com/kein-1.png'
   name = "Kein Li"
