@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kein Li</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Kein Li</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 22 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Building out a mini iOS Manga App</title>
+      <link>http://localhost:1313/posts/manga-app/</link>
+      <pubDate>Sun, 22 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/manga-app/</guid>
+      <description>&lt;h3 id=&#34;building-out-a-mini-ios-manga-app&#34;&gt;Building Out a Mini iOS Manga App&lt;/h3&gt;&#xA;&lt;p&gt;Finally getting back into building iOS apps after a ~2 year hiatus. It&amp;rsquo;s been awhile since I built something outside of work. I started with watching some CS193P lectures&#xA;and followed along for a few lectures before I got bored and decided the best&#xA;way to learn is to build anything ASAP.&lt;/p&gt;&#xA;&lt;p&gt;Personally I think using AI tools is awful when learning something new and&#xA;having it write the code for you is awful. I use it strictly for learning purposes like &amp;ldquo;Explain Swift Concurrency&amp;rdquo; or &amp;ldquo;Is my code idiomatic?&amp;rdquo; or hints on&#xA;how to approach a problem&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>About</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

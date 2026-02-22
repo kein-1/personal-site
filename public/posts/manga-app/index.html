@@ -1,0 +1,266 @@
+<!doctype html>
+
+
+
+
+
+
+
+<html
+  class="not-ready lg:text-base"
+  style="--bg:#faf8f1"
+  lang="en-us"
+  dir="ltr"
+><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  
+  <title>Building out a mini iOS Manga App - Kein Li</title>
+
+  
+  <meta name="theme-color" />
+
+  <meta name="description" content="Building Out a Mini iOS Manga App
+Finally getting back into building iOS apps after a ~2 year hiatus. It&rsquo;s been awhile since I built something outside of work. I started with watching some CS193P lectures
+and followed along for a few lectures before I got bored and decided the best
+way to learn is to build anything ASAP.
+Personally I think using AI tools is awful when learning something new and
+having it write the code for you is awful. I use it strictly for learning purposes like &ldquo;Explain Swift Concurrency&rdquo; or &ldquo;Is my code idiomatic?&rdquo; or hints on
+how to approach a problem" />
+  <meta name="author" content="Kein Li" /><link rel="preload stylesheet" as="style" href="http://localhost:1313/main.min.e86ae67e01e2d2055106abf72be7357c950191060e5f159f24e2790fd8237e8c.css" integrity="sha256-6GrmfgHi0gVRBqv3K&#43;c1fJUBkQYOXxWfJOJ5D9gjfow=" />
+
+  
+  <link rel="preload" as="image" href="http://localhost:1313/theme.svg" />
+
+  <link rel="preload" as="image" href="https://github.com/kein-1.png" />
+
+  <link rel="preload" as="image" href="http://localhost:1313/github.svg" /><link rel="preload" as="image" href="http://localhost:1313/linkedin.svg" /><link rel="preload" as="image" href="http://localhost:1313/rss.svg" />
+
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css"
+  integrity="sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI"
+  crossorigin="anonymous"
+/>
+<script
+  defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.js"
+  integrity="sha384-G0zcxDFp5LWZtDuRMnBkk3EphCK1lhEf4UEyEM693ka574TZGwo4IWwS6QLzM/2t"
+  crossorigin="anonymous"
+></script>
+<script
+  defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/auto-render.min.js"
+  integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+  crossorigin="anonymous"
+></script><script>
+  document.addEventListener('DOMContentLoaded', () =>
+    renderMathInElement(document.body, {
+      
+      
+      delimiters: [
+        { left: '$$', right: '$$', display: true },
+        { left: '$', right: '$', display: false },
+      ],
+      
+      throwOnError: false,
+    }),
+  );
+</script>
+
+
+  
+  <link rel="icon" href="http://localhost:1313/favicon.ico" />
+  <link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png" />
+
+  <meta name="generator" content="Hugo 0.156.0">
+</head><body
+    class="bg-(--bg) text-black antialiased duration-200 ease-out [-webkit-tap-highlight-color:transparent] dark:text-white"
+  ><header
+  class="mx-auto flex h-[4.5rem] max-w-(--w) px-8 whitespace-nowrap lg:justify-center"
+>
+  <div class="relative z-50 flex items-center ltr:mr-auto rtl:ml-auto">
+    <a
+      class="-translate-y-[1px] text-2xl font-medium"
+      href="http://localhost:1313/"
+      >Kein Li</a
+    >
+    <div
+      class="btn-dark text-[0px] ltr:ml-4 rtl:mr-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.svg)_left_center/cover_no-repeat] dark:invert dark:[background-position:right]"
+      role="button"
+      aria-label="Dark"
+    ></div>
+  </div>
+
+  <div
+    class="btn-menu relative z-50 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden ltr:-mr-8 rtl:-ml-8"
+    role="button"
+    aria-label="Menu"
+  ></div>
+
+  <script>
+    
+    const htmlClass = document.documentElement.classList;
+    setTimeout(() => {
+      htmlClass.remove('not-ready');
+    }, 10);
+
+    
+    const btnMenu = document.querySelector('.btn-menu');
+    btnMenu.addEventListener('click', () => {
+      htmlClass.toggle('open');
+    });
+
+    
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+    const lightBg = '#faf8f1'.replace(/"/g, '');
+    const setDark = (isDark) => {
+      metaTheme.setAttribute('content', isDark ? "rgb(0 0 0 / 85%)" : lightBg);
+      htmlClass[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark);
+    };
+
+    
+    const darkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    if (htmlClass.contains('dark')) {
+      setDark(true);
+    } else {
+      const darkVal = localStorage.getItem('dark');
+      setDark(darkVal ? darkVal === 'true' : darkScheme.matches);
+    }
+
+    
+    darkScheme.addEventListener('change', (event) => {
+      setDark(event.matches);
+    });
+
+    
+    const btnDark = document.querySelector('.btn-dark');
+    btnDark.addEventListener('click', () => {
+      setDark(localStorage.getItem('dark') !== 'true');
+    });
+  </script>
+
+  <div
+    class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full flex-col justify-center bg-(--bg) pb-16 duration-200 select-none lg:static lg:h-auto lg:flex-row lg:bg-transparent! lg:pb-0 lg:transition-none"
+  ><nav
+      class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-10 rtl:space-x-reverse"
+    ><a
+        class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/about/"
+        >About</a
+      ></nav><nav
+      class="mt-12 flex justify-center space-x-10 lg:mt-0 lg:items-center ltr:lg:ml-14 rtl:space-x-reverse rtl:lg:mr-14 dark:invert"
+    >
+      <a
+        class="h-7 w-7 text-[0px] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./github.svg)"
+        href="https://github.com/kein-1"
+        target="_blank"
+        rel="me"
+      >github</a>
+      <a
+        class="h-7 w-7 text-[0px] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./linkedin.svg)"
+        href="https://linkedin.com/in/keinli"
+        target="_blank"
+        rel="me"
+      >linkedin</a>
+      <a
+        class="h-7 w-7 text-[0px] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./rss.svg)"
+        href="http://localhost:1313/index.xml"
+        target="_blank"
+        rel="alternate"
+      >rss</a>
+    </nav>
+  </div>
+</header>
+<main
+      class="prose prose-neutral dark:prose-invert relative mx-auto min-h-[calc(100vh-9rem)] max-w-(--w) px-8 pt-14 pb-16"
+    ><article>
+  <header class="mb-14">
+    <h1 class="my-0! pb-2.5">Building out a mini iOS Manga App</h1><div class="text-xs antialiased opacity-60"><time>Feb 22, 2026</time><span class="mx-1">&middot;</span>
+      <span>Kein Li</span></div></header>
+
+  <section><h3 id="building-out-a-mini-ios-manga-app">Building Out a Mini iOS Manga App</h3>
+<p>Finally getting back into building iOS apps after a ~2 year hiatus. It&rsquo;s been awhile since I built something outside of work. I started with watching some CS193P lectures
+and followed along for a few lectures before I got bored and decided the best
+way to learn is to build anything ASAP.</p>
+<p>Personally I think using AI tools is awful when learning something new and
+having it write the code for you is awful. I use it strictly for learning purposes like &ldquo;Explain Swift Concurrency&rdquo; or &ldquo;Is my code idiomatic?&rdquo; or hints on
+how to approach a problem</p>
+<h4 id="notes">Notes</h4>
+<ul>
+<li>
+<p><strong>Navigation and TabViews</strong></p>
+<ul>
+<li>NavigationStack and TabView did not initially work well together.</li>
+<li>Each TabView required its own NavigationStack for navigation titles to behave properly.</li>
+<li>Applying a universal background color did not work globally; it only applied correctly within each TabItem view.</li>
+</ul>
+</li>
+<li>
+<p><strong>Use of Enums</strong></p>
+<ul>
+<li>Enums were used to manage both navigation and loading states.</li>
+<li>Navigation was wrapped in a <code>Route</code> enum and switched inside <code>.navigationDestination</code>.</li>
+<li>Loading state enum contained: <code>Idle</code>, <code>Loading</code>, <code>Success</code>, and <code>Error</code>, where Loaded and Error contained the data and error message respectively so I can switch on the state and either display the data or the error message.</li>
+</ul>
+</li>
+<li>
+<p><strong>Error Handling</strong></p>
+<ul>
+<li>Network calls threw specific <code>NetworkError</code> enums.</li>
+<li>Covered decoding, URL, and networking errors.</li>
+<li>Errors were mapped to a user-friendly error message struct stored inside the loading state.</li>
+</ul>
+</li>
+<li>
+<p><strong>Async/Await</strong></p>
+<ul>
+<li>Used async/await functions along with the <code>.task</code> modifier for background HTTP calls.</li>
+<li>Implemented an HTTP client layer injected into view models.</li>
+<li>Followed Dependency Injection and separation of concerns principles.</li>
+</ul>
+</li>
+<li>
+<p><strong><code>.task</code> Modifier with <code>id</code></strong></p>
+<ul>
+<li>The <code>id</code> property re-runs the task whenever the id changes.</li>
+<li>Used this to auto-refetch when query/filter properties changed.</li>
+<li>Watched a struct for changes and re-ran <code>loadManga()</code>.</li>
+<li>Allowed reuse of the same function for initial load and future refetches (e.g., filter changes).</li>
+</ul>
+</li>
+<li>
+<p><strong>View Models</strong></p>
+<ul>
+<li>Used ObservableObjects to manage state for each view.</li>
+<li>Each view model had its own HTTP client instance.</li>
+<li>Followed Dependency Injection and separation of concerns principles.</li>
+</ul>
+</li>
+</ul>
+</section>
+
+  </article></main><footer
+  class="mx-auto flex h-[4.5rem] max-w-(--w) items-center px-8 text-xs tracking-wider uppercase opacity-60"
+>
+  <div class="mr-auto">&copy;2026
+    <a class="link" href="http://localhost:1313/">Kein Li</a></div>
+  <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank"
+    >powered by hugo️️</a
+  >️
+  <a
+    class="link"
+    href="https://github.com/nanxiaobei/hugo-paper"
+    rel="noopener"
+    target="_blank"
+    >hugo-paper</a
+  >
+</footer>
+</body>
+</html>
