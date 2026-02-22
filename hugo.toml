@@ -4,6 +4,9 @@ title = 'Kein Li'
 theme = "paper"
 
 
+[author]
+  name = "Kein Li"
+
 [caches]
   [caches.images]
     dir = ':cacheDir/images'
