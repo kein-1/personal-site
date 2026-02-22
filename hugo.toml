@@ -4,6 +4,10 @@ title = 'Kein Li'
 theme = "paper"
 
 
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
+
 [params]
   # color style
   color = 'linen'                           # linen, wheat, gray, light

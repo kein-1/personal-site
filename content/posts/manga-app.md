@@ -2,6 +2,7 @@
 title = "Building out a mini iOS Manga App"
 date = 2026-02-22
 draft = false
+weight = 1
 +++
 
 ### Building Out a Mini iOS Manga App

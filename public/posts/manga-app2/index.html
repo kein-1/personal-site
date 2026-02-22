@@ -17,13 +17,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
   
-  <title>Kein Li</title>
+  <title>Building out a mini iOS Manga App - Kein Li</title>
 
   
   <meta name="theme-color" />
 
-  
-  <meta name="description" content="A personal blog" />
+  <meta name="description" content="Building Out a Mini iOS Manga App
+Finally getting back into building iOS apps after a ~2 year hiatus. It&rsquo;s been awhile since I built something outside of work. I started with watching some CS193P lectures
+and followed along for a few lectures before I got bored and decided the best
+way to learn is to build anything ASAP.
+Personally I think using AI tools is awful when learning something new and
+having it write the code for you is awful. I use it strictly for learning purposes like &ldquo;Explain Swift Concurrency&rdquo; or &ldquo;Is my code idiomatic?&rdquo; or hints on
+how to approach a problem" />
   <meta name="author" content="Kein Li" /><link rel="preload stylesheet" as="style" href="http://localhost:1313/main.min.e86ae67e01e2d2055106abf72be7357c950191060e5f159f24e2790fd8237e8c.css" integrity="sha256-6GrmfgHi0gVRBqv3K&#43;c1fJUBkQYOXxWfJOJ5D9gjfow=" />
 
   
@@ -175,19 +180,73 @@
 </header>
 <main
       class="prose prose-neutral dark:prose-invert relative mx-auto min-h-[calc(100vh-9rem)] max-w-(--w) px-8 pt-14 pb-16"
-    >
+    ><article>
+  <header class="mb-14">
+    <h1 class="my-0! pb-2.5">Building out a mini iOS Manga App</h1><div class="text-xs antialiased opacity-60"><time>Feb 22, 2026</time><span class="mx-1">&middot;</span>
+      <span>Kein Li</span></div></header>
 
-<div class="-mt-2 mb-12 flex items-center"><div
-    class="h-24 w-24 shrink-0 rounded-full border-[0.5px] border-black/10 bg-white/50 ltr:mr-5 ltr:-ml-1 rtl:-mr-1 rtl:ml-5 dark:bg-white/90!">
-    <img class="not-prose my-0 h-full w-full rounded-full bg-black/5! hover:animate-spin dark:bg-black/80!"
-      src="https://github.com/kein-1.png" alt="Kein Li" />
-  </div><div>
-    <div class="mt-3 mb-1 text-2xl font-medium text-black dark:text-white">Kein Li</div>
-    <div class="break-words">Software engineer. Always learning.</div>
-  </div></div><section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0"><span class="mb-1 inline-block text-xs tracking-wider text-orange-500">Featured</span><h2 class="my-0!">Building out a mini iOS Manga App</h2>
-  <time class="text-xs antialiased opacity-60">Feb 22, 2026</time>
-  <a class="absolute inset-0 text-[0px]" href="http://localhost:1313/posts/manga-app/">Building out a mini iOS Manga App</a>
-</section></main><footer
+  <section><h3 id="building-out-a-mini-ios-manga-app">Building Out a Mini iOS Manga App</h3>
+<p>Finally getting back into building iOS apps after a ~2 year hiatus. It&rsquo;s been awhile since I built something outside of work. I started with watching some CS193P lectures
+and followed along for a few lectures before I got bored and decided the best
+way to learn is to build anything ASAP.</p>
+<p>Personally I think using AI tools is awful when learning something new and
+having it write the code for you is awful. I use it strictly for learning purposes like &ldquo;Explain Swift Concurrency&rdquo; or &ldquo;Is my code idiomatic?&rdquo; or hints on
+how to approach a problem</p>
+<h4 id="notes">Notes</h4>
+<ul>
+<li>
+<p><strong>Navigation and TabViews</strong></p>
+<ul>
+<li>NavigationStack and TabView did not initially work well together.</li>
+<li>Each TabView required its own NavigationStack for navigation titles to behave properly.</li>
+<li>Applying a universal background color did not work globally; it only applied correctly within each TabItem view.</li>
+</ul>
+</li>
+<li>
+<p><strong>Use of Enums</strong></p>
+<ul>
+<li>Enums were used to manage both navigation and loading states.</li>
+<li>Navigation was wrapped in a <code>Route</code> enum and switched inside <code>.navigationDestination</code>.</li>
+<li>Loading state enum contained: <code>Idle</code>, <code>Loading</code>, <code>Success</code>, and <code>Error</code>, where Loaded and Error contained the data and error message respectively so I can switch on the state and either display the data or the error message.</li>
+</ul>
+</li>
+<li>
+<p><strong>Error Handling</strong></p>
+<ul>
+<li>Network calls threw specific <code>NetworkError</code> enums.</li>
+<li>Covered decoding, URL, and networking errors.</li>
+<li>Errors were mapped to a user-friendly error message struct stored inside the loading state.</li>
+</ul>
+</li>
+<li>
+<p><strong>Async/Await</strong></p>
+<ul>
+<li>Used async/await functions along with the <code>.task</code> modifier for background HTTP calls.</li>
+<li>Implemented an HTTP client layer injected into view models.</li>
+<li>Followed Dependency Injection and separation of concerns principles.</li>
+</ul>
+</li>
+<li>
+<p><strong><code>.task</code> Modifier with <code>id</code></strong></p>
+<ul>
+<li>The <code>id</code> property re-runs the task whenever the id changes.</li>
+<li>Used this to auto-refetch when query/filter properties changed.</li>
+<li>Watched a struct for changes and re-ran <code>loadManga()</code>.</li>
+<li>Allowed reuse of the same function for initial load and future refetches (e.g., filter changes).</li>
+</ul>
+</li>
+<li>
+<p><strong>View Models</strong></p>
+<ul>
+<li>Used ObservableObjects to manage state for each view.</li>
+<li>Each view model had its own HTTP client instance.</li>
+<li>Followed Dependency Injection and separation of concerns principles.</li>
+</ul>
+</li>
+</ul>
+</section>
+
+  </article></main><footer
   class="mx-auto flex h-[4.5rem] max-w-(--w) items-center px-8 text-xs tracking-wider uppercase opacity-60"
 >
   <div class="mr-auto">&copy;2026
